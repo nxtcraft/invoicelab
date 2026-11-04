@@ -24,6 +24,7 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"InvoiceLab","url":"https://nxtcraft.github.io/invoicelab/","applicationCategory":"BusinessApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"description":"Free online invoice generator. Create professional PDF invoices instantly, no signup needed.","featureList":["PDF invoice generation","Tax calculation","Line item management","Browser-based — no data stored"]}
   </script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I add GST to invoices?","acceptedAnswer":{"@type":"Answer","text":"Yes. Enter the GST rate (5%, 12%, 18% or 28%) per line item. The invoice automatically calculates CGST and SGST breakdowns and displays the total tax amount."}},{"@type":"Question","name":"Can I download the invoice as a PDF?","acceptedAnswer":{"@type":"Answer","text":"Yes. Click Download PDF after completing the invoice. The PDF is generated entirely in your browser using jsPDF — no data is sent to any server."}},{"@type":"Question","name":"Is the invoice generator free?","acceptedAnswer":{"@type":"Answer","text":"Yes, completely free. No account, no watermark, unlimited invoices."}}]}</script>
   <!-- jsPDF CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.7.1/jspdf.plugin.autotable.min.js"></script>
@@ -162,6 +163,8 @@
     addItem(); addItem();
   }
 </script>
+<style>.related-tools{background:#f0fdf4;border-top:1px solid #bbf7d0;padding:1.25rem 1.5rem;margin-top:1rem}.related-tools h3{font-size:.8rem;font-weight:700;color:#15803d;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.6rem}.related-tools-grid{display:flex;flex-wrap:wrap;gap:.5rem}.related-tools a{display:inline-flex;align-items:center;gap:.35rem;padding:.35rem .8rem;border-radius:20px;border:1.5px solid #bbf7d0;color:#166534;font-size:.82rem;font-weight:600;text-decoration:none;transition:all .15s}.related-tools a:hover{background:#16a34a;color:#fff;border-color:#16a34a}</style>
+<div class="related-tools"><h3>Related Tools</h3><div class="related-tools-grid"><a href="https://nxtcraft.github.io/shopbook/">🛒 ShopBook</a><a href="https://nxtcraft.github.io/gstcalc/">🧾 GST Calculator</a><a href="https://nxtcraft.github.io/salaryslip/">💼 Salary Slip</a><a href="https://nxtcraft.github.io/resumekit/">📋 ResumeKit</a></div></div>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.register("/invoicekit/sw.js");</script>
 </body>
 </html>
