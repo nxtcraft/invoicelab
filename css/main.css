@@ -148,6 +148,7 @@ nav {
 footer { border-top: 1px solid var(--border); padding: 24px 20px; text-align: center; color: var(--muted); font-size: 12px; background: var(--surface); }
 
 @media (max-width: 580px) {
-  .items-header, .item-row { grid-template-columns: 1fr 60px 80px 80px 32px; }
+  .items-header, .item-row { grid-template-columns: minmax(0,1fr) 44px 64px 64px 28px; gap: 4px; }
+  .item-row input { min-width: 0; }
   .two-col { grid-template-columns: 1fr; }
 }
